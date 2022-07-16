@@ -1,0 +1,126 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local FRAME = Instance.new("Frame")
+local IY = Instance.new("TextButton")
+local CMDX = Instance.new("TextButton")
+local GravityGun = Instance.new("TextButton")
+local Walkspeed100 = Instance.new("TextButton")
+local InvisibleTool = Instance.new("TextButton")
+local Label = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+FRAME.Name = "FRAME"
+FRAME.Parent = ScreenGui
+FRAME.BackgroundColor3 = Color3.fromRGB(0, 3, 221)
+FRAME.BorderColor3 = Color3.fromRGB(255, 0, 4)
+FRAME.BorderSizePixel = 10
+FRAME.Position = UDim2.new(0.326341778, 0, 0.274173796, 0)
+FRAME.Size = UDim2.new(0, 562, 0, 369)
+FRAME.Active = true
+FRAME.Draggable = true
+
+IY.Name = "IY"
+IY.Parent = FRAME
+IY.BackgroundColor3 = Color3.fromRGB(243, 255, 0)
+IY.BorderColor3 = Color3.fromRGB(255, 0, 4)
+IY.BorderSizePixel = 5
+IY.Position = UDim2.new(0.0658362955, 0, 0.230352297, 0)
+IY.Size = UDim2.new(0, 135, 0, 68)
+IY.Font = Enum.Font.GothamBlack
+IY.Text = "Infinite Yield"
+IY.TextColor3 = Color3.fromRGB(0, 0, 0)
+IY.TextScaled = true
+IY.TextSize = 14.000
+IY.TextWrapped = true
+IY.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+CMDX.Name = "CMD-X"
+CMDX.Parent = FRAME
+CMDX.BackgroundColor3 = Color3.fromRGB(243, 255, 0)
+CMDX.BorderColor3 = Color3.fromRGB(255, 0, 4)
+CMDX.BorderSizePixel = 5
+CMDX.Position = UDim2.new(0.693950176, 0, 0.230352297, 0)
+CMDX.Size = UDim2.new(0, 135, 0, 68)
+CMDX.Font = Enum.Font.GothamBlack
+CMDX.Text = "CMD-X"
+CMDX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CMDX.TextScaled = true
+CMDX.TextSize = 14.000
+CMDX.TextWrapped = true
+CMDX.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+GravityGun.Name = "Gravity Gun"
+GravityGun.Parent = FRAME
+GravityGun.BackgroundColor3 = Color3.fromRGB(243, 255, 0)
+GravityGun.BorderColor3 = Color3.fromRGB(255, 0, 4)
+GravityGun.BorderSizePixel = 5
+GravityGun.Position = UDim2.new(0.380782902, 0, 0.593495905, 0)
+GravityGun.Size = UDim2.new(0, 135, 0, 68)
+GravityGun.Font = Enum.Font.GothamBlack
+GravityGun.Text = "Gravity Gun"
+GravityGun.TextColor3 = Color3.fromRGB(0, 0, 0)
+GravityGun.TextScaled = true
+GravityGun.TextSize = 14.000
+GravityGun.TextWrapped = true
+GravityGun.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SupermanGUI/jbfnf/main/aa"), true))()
+end)
+
+Walkspeed100.Name = "Walkspeed 100"
+Walkspeed100.Parent = FRAME
+Walkspeed100.BackgroundColor3 = Color3.fromRGB(243, 255, 0)
+Walkspeed100.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Walkspeed100.BorderSizePixel = 5
+Walkspeed100.Position = UDim2.new(0.0658362806, 0, 0.593495905, 0)
+Walkspeed100.Size = UDim2.new(0, 135, 0, 68)
+Walkspeed100.Font = Enum.Font.GothamBlack
+Walkspeed100.Text = "Walkspeed 100"
+Walkspeed100.TextColor3 = Color3.fromRGB(0, 0, 0)
+Walkspeed100.TextScaled = true
+Walkspeed100.TextSize = 14.000
+Walkspeed100.TextWrapped = true
+Walkspeed100.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+InvisibleTool.Name = "Invisible Tool"
+InvisibleTool.Parent = FRAME
+InvisibleTool.BackgroundColor3 = Color3.fromRGB(243, 255, 0)
+InvisibleTool.BorderColor3 = Color3.fromRGB(255, 0, 4)
+InvisibleTool.BorderSizePixel = 5
+InvisibleTool.Position = UDim2.new(0.693950176, 0, 0.593495905, 0)
+InvisibleTool.Size = UDim2.new(0, 135, 0, 68)
+InvisibleTool.Font = Enum.Font.GothamBlack
+InvisibleTool.Text = "Invisible Tool"
+InvisibleTool.TextColor3 = Color3.fromRGB(0, 0, 0)
+InvisibleTool.TextScaled = true
+InvisibleTool.TextSize = 14.000
+InvisibleTool.TextWrapped = true
+InvisibleTool.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SupermanGUI/few/main/few"), true))()
+end)
+
+Label.Name = "Label"
+Label.Parent = FRAME
+Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label.BackgroundTransparency = 1.000
+Label.Size = UDim2.new(0, 562, 0, 50)
+Label.Font = Enum.Font.GothamBlack
+Label.Text = "Superman GUI"
+Label.TextColor3 = Color3.fromRGB(243, 255, 0)
+Label.TextScaled = true
+Label.TextSize = 14.000
+Label.TextWrapped = true
